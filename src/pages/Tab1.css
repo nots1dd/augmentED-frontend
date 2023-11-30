@@ -1,0 +1,29 @@
+.small-input {
+    width: 30%;
+    bottom: 0;
+    right: 90px;
+    position: fixed;
+}
+
+.small-enter-button-input {
+    width: 5%;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+
+.small-upload-book-input {
+    width: 10%;
+    right: 0;
+    position: fixed;
+}
+
+.small-fac {
+    width: 20%;
+    top: 30%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+
