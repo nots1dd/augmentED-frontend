@@ -1,14 +1,14 @@
 .small-input {
     width: 30%;
     bottom: 0;
-    right: 90px;
+    right: 110px;
     position: fixed;
 }
 
 .small-enter-button-input {
     width: 5%;
     bottom: 0;
-    right: 0;
+    right: 20px;
     position: fixed;
 }
 
@@ -26,4 +26,30 @@
     position: fixed;
 }
 
+.document-input {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
 
+.pdf-operators-prevpage-input {
+    position: fixed;
+    top: 28%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.pdf-operators-nextpage-input {
+    position: fixed;
+    top: 20%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.pdf-operators-currpage-input {
+    position: fixed;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
