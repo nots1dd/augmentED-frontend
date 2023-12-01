@@ -1,8 +1,10 @@
-import { IonButton, IonCardContent, IonCardHeader, IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToast, IonToolbar } from '@ionic/react';
-import { useState } from 'react';
+import { IonButton, IonCardContent, IonCardHeader, IonContent, IonHeader, IonIcon, IonInput, IonPage, IonTitle, IonToast, IonToolbar } from '@ionic/react';
+import { arrowBackCircle, arrowForwardCircle } from 'ionicons/icons';
+import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
+
 
 const Tab1: React.FC = () => {
   const [inputValue, setInputValue] = useState<string>('');
@@ -10,7 +12,8 @@ const Tab1: React.FC = () => {
   const [numPages, setNumPages] = useState<number>();
   const [pageNumber, setPageNumber] = useState<number>(1);
   const [currentPage, setCurrentPage] = useState(1);
-
+  const [users, setUsers] = useState([])
+  
   const handleNextPage = () => {
     setCurrentPage((prevPage) => prevPage + 1);
   };
@@ -31,11 +34,7 @@ const Tab1: React.FC = () => {
   const handleToastClose = () => {
     setShowToast(false);
   };
-
-  const handleEnter = () => {
-    // Handle the "Enter" action here
-    console.log('Input Value:', inputValue);
-  };
+  
 
   return (
     <IonPage>
@@ -55,7 +54,7 @@ const Tab1: React.FC = () => {
           <IonCardHeader>
             <IonCardContent>
               <IonToast isOpen= {showToast} onWillDismiss={handleToastClose} message={"ok"} duration={1000} className='small-fac'></IonToast>
-              <IonInput className='small-input' fill='outline' placeholder='Enter your text'></IonInput>
+              <IonInput className='small-input' fill= "outline" placeholder='Enter your text'></IonInput>
               <IonButton color= {"tertiary"} className='small-enter-button-input' onClick={handleShowToast}>
                 Enter
               </IonButton>
@@ -63,8 +62,13 @@ const Tab1: React.FC = () => {
                 console.log(err)
               }}>
                 <Page pageNumber={currentPage} />
-              <IonButton className='pdf-operators-prevpage-input' onClick={handlePrevPage} disabled={currentPage===1}>Prev Page</IonButton>
-              <IonButton className='pdf-operators-nextpage-input' onClick={handleNextPage} disabled={currentPage===numPages}>Next Page</IonButton>
+              <IonButton className='pdf-operators-prevpage-input' onClick={handlePrevPage} disabled={currentPage===1}>
+                <IonIcon icon= {arrowBackCircle}>
+                </IonIcon>
+              </IonButton>
+              <IonButton className='pdf-operators-nextpage-input' onClick={handleNextPage} disabled={currentPage===numPages}>
+                <IonIcon icon= {arrowForwardCircle}></IonIcon>
+              </IonButton>
               <p className='pdf-operators-currpage-input' color='primary'>Page: {currentPage}</p>
               </Document>
             </IonCardContent>

@@ -1,5 +1,5 @@
 .small-input {
-    width: 30%;
+    width: 40%;
     bottom: 0;
     right: 110px;
     position: fixed;
@@ -21,7 +21,7 @@
 .small-fac {
     width: 20%;
     top: 30%;
-    left: 90%;
+    left: 88%;
     transform: translate(-50%, -50%);
     position: fixed;
 }
@@ -30,6 +30,14 @@
     width: 50%;
     height: 100vh;
     overflow: hidden;
+}
+
+.chatlayout-input {
+    width: 50%;
+    height: 100vh;
+    left: 0;
+    overflow: hidden;
+    background-color: gray;
 }
 
 .pdf-operators-prevpage-input {
