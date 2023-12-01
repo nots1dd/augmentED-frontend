@@ -1,9 +1,13 @@
-.ai-dialogue3-input {
+.small-input {
+    width: 45%;
+    bottom: 750px;
+    right: 120px;
     position: fixed;
-    left: 50%;
-    height: 65%;
-    width: 48%;
-    outline-color: blue;
-    outline-style: dotted;
-    outline-width: 3px;
+}
+
+.summarize-btn-input {
+    width: 43%;
+    bottom: 700px;
+    right: 140px;
+    position: fixed;
 }

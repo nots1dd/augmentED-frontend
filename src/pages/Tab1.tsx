@@ -3,6 +3,7 @@ import { arrowBackCircle, arrowForwardCircle } from 'ionicons/icons';
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import ExploreContainer from '../components/ExploreContainer';
+import Chatbot from '../components/Chatbot';
 import './Tab1.css';
 
 
