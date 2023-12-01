@@ -1,0 +1,53 @@
+/* Chatbot.css */
+
+/* Apply some basic styling to the IonPage */
+ion-page {
+  height: 100%;
+}
+
+/* Style the IonContent to provide some padding and background color */
+ion-content {
+  padding: 20px;
+  background-color: #f8f8f8; /* Light gray background color */
+}
+
+/* Style the IonList to remove default padding and margin */
+ion-list {
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the user and bot messages with rounded corners and padding */
+.user-message {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.bot-message {
+    background-color: #007bff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+/* Style the input area and button */
+ion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+ion-input {
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 8px;
+}
+
+ion-button {
+  border-radius: 5px;
+  margin-left: 10px;
+  background-color: #007bff; /* Primary color for the button */
+  color: #fff; /* White text color */
+}

@@ -35,8 +35,8 @@ const Tab2: React.FC = () => {
 
       </IonCardHeader>
       <IonContent className='ai-dialogue2-input'>
-        <h1>AI-Dialogue Box</h1>
-        <p>LLM output will be here</p>
+        <h1>AI-Notemaker</h1>
+        <p>LLM generated notes will be here</p>
       </IonContent>
     </IonPage>
   );
