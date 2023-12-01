@@ -3,7 +3,6 @@ import { arrowBackCircle, arrowForwardCircle } from 'ionicons/icons';
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import ExploreContainer from '../components/ExploreContainer';
-import Chatbot from '../components/Chatbot';
 import './Tab1.css';
 
 
@@ -41,13 +40,13 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle color={'medium'}>augmentED-Chatbot</IonTitle>
+          <IonTitle className='logo1'>augmentED-Chatbot</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">augmentED-Chatbot</IonTitle>
+            <IonTitle size="large" className='logo1'>augmentED-Chatbot</IonTitle>
           </IonToolbar>
         </IonHeader>
         <ExploreContainer name="Chatbot" />

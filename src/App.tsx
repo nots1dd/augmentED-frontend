@@ -46,6 +46,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
+    {/* <Route exact path= "/augmentED-home" render={() => <Redirect to='/augmentED-home'/>}><Home></Home></Route> */}
       <IonTabs>
         <IonRouterOutlet>
           <Route exact path="/augmentED-Chatbot">
@@ -58,7 +59,7 @@ const App: React.FC = () => (
             <Tab3 />
           </Route>
           <Route exact path="/">
-            <Redirect to="/augmentED-Chatbot" />
+            <Redirect to="/augmentED-SimilaritySearch" />
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">

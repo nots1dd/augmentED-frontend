@@ -1,4 +1,4 @@
-import { IonButton, IonCardHeader, IonContent, IonHeader, IonInput, IonPage, IonRow, IonText, IonTitle, IonToast, IonToolbar } from '@ionic/react';
+import { IonButton, IonCardHeader, IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToast, IonToolbar } from '@ionic/react';
 import { useState } from 'react';
 import './Tab3.css';
 
@@ -16,7 +16,7 @@ const Tab3: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>augmentED-Similarity Search</IonTitle>
+          <IonTitle className='logo3'>augmentED-Similarity Search</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>

@@ -16,7 +16,7 @@ const Tab2: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>augmentED-Note Maker</IonTitle>
+          <IonTitle className='logo2'>augmentED-Note Maker</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
