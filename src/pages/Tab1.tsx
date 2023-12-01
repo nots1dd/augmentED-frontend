@@ -72,6 +72,10 @@ const Tab1: React.FC = () => {
               <p className='pdf-operators-currpage-input' color='primary'>Page: {currentPage}</p>
               </Document>
             </IonCardContent>
+            <IonContent className='ai-dialogue-input'>
+              <h1>AI-Dialogue Box</h1>
+              <p>LLM output will be here</p>
+            </IonContent>
           </IonCardHeader>
         </IonContent>
       </IonContent>

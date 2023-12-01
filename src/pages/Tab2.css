@@ -1,0 +1,10 @@
+.ai-dialogue2-input {
+    position: fixed;
+    left: 50%;
+    height: 60%;
+    bottom: 100px;
+    width: 48%;
+    outline-color: red;
+    outline-style: dotted;
+    outline-width: 3px;
+}

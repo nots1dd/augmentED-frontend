@@ -1,0 +1,9 @@
+.ai-dialogue3-input {
+    position: fixed;
+    left: 50%;
+    height: 65%;
+    width: 48%;
+    outline-color: blue;
+    outline-style: dotted;
+    outline-width: 3px;
+}

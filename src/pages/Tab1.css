@@ -61,3 +61,13 @@
     transform: translate(-50%, -50%);
     color: black;
 }
+
+.ai-dialogue-input {
+    position: fixed;
+    left: 50%;
+    height: 65%;
+    width: 48%;
+    outline-color: green;
+    outline-style: dotted;
+    outline-width: 3px;
+}
